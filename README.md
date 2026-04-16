@@ -1,5 +1,7 @@
 # Feature Page Skill for Claude Cowork
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 A 3-phase workflow that turns raw research into elite feature page briefs — ready for SEO specialists, copywriters, and CRO experts to execute. Covers research intake, page strategy, and heuristic QA critique. Each phase saves a standalone document.
 
 ---
@@ -99,3 +101,11 @@ Once installed, trigger it by asking Claude to build, improve, or critique a fea
 ## About
 
 Built by [Eddie](https://www.linkedin.com/in/eddie_casado) as a personal contribution to the B2B marketing community. If you use it, improve it, or have feedback, open an issue or reach out on LinkedIn.
+
+---
+
+## License
+
+This work is licensed under [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+
+You are free to share and adapt it with attribution. Commercial use is not permitted without explicit permission from the author.

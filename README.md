@@ -98,4 +98,4 @@ Once installed, trigger it by asking Claude to build, improve, or critique a fea
 
 ## About
 
-Built by [Eddie](https://www.linkedin.com/in/yourhandle) as a personal contribution to the B2B marketing community. If you use it, improve it, or have feedback, open an issue or reach out on LinkedIn.
+Built by [Eddie](https://www.linkedin.com/in/eddie_casado) as a personal contribution to the B2B marketing community. If you use it, improve it, or have feedback, open an issue or reach out on LinkedIn.

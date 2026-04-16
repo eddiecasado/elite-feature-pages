@@ -15,26 +15,37 @@ It runs a structured research and analysis workflow across three phases. Each ph
 ## Phases and Outputs
 
 ### Phase 1 — Research Intake
-Pulls product truth, voice-of-customer data, competitor intelligence, behavior analytics, and SEO demand data from connected tools. Audits any existing research files you provide before starting.
+Pulls product truth, voice-of-customer data, competitor intelligence, behavior analytics, and SEO demand data from connected tools. Audits any existing research files you provide before starting. Takes full-page screenshots of competitor pages and saves them to a dedicated folder for visual benchmarking.
 
-Produces two documents:
-- **`[feature]-research-intake.md`** — Buyer problem summary, product truth, capabilities vs. differentiators, behavior insights, FAQ candidates, and a full page inputs brief.
-- **`[feature]-seo-analysis.md`** — Keyword landscape, GSC data, intent mapping, competitor ranking analysis, demand vs. internal language gaps, and prioritized SEO recommendations. Structured for direct handoff to an SEO specialist.
+Produces three documents:
+
+**`[feature]-research-intake.md`**
+Buyer problem summary, product truth, capabilities vs. differentiators, behavior insights from analytics tools, competitive gap analysis, and a full page inputs brief structured for handoff to Phase 2.
+
+**`[feature]-seo-analysis.md`**
+Keyword landscape, GSC data, intent mapping, competitor ranking analysis, demand vs. internal language gaps, and prioritized SEO recommendations. Structured for direct handoff to an SEO specialist.
+
+**`[feature]-competitive-benchmark.md`** + **`[feature]-competitive-screenshots/`**
+Per-competitor structural and messaging breakdown, annotated with full-page screenshots. Includes a Competitive Gaps section that cross-references VOC data, SEO demand, and competitor content to surface what every competitor is failing to say — messaging gaps, structural gaps, proof gaps, and search demand gaps. Structured for handoff to a designer or CRO specialist.
 
 ### Phase 2 — Strategy and Structure
 Turns the research into a page strategy, narrative arc, section outline, and messaging system.
 
 Produces:
-- **`[feature]-strategy-and-structure.md`** — Page classification, narrative tension, section outline with each section annotated by job and key message, hero options, claims to prove, claims to remove, and prototype notes.
+
+**`[feature]-strategy-and-structure.md`**
+Page classification, narrative tension, section outline with each section annotated by job and key message, hero options, claims to prove, claims to remove, and prototype notes.
 
 ### Phase 3 — QA and Critique
-Stress-tests a draft page through two heuristic lenses plus a full messaging and copy critique.
+Stress-tests a draft page through two heuristic lenses plus a full messaging and copy critique. Loads the competitive benchmark and screenshots from Phase 1 as a visual reference during the heuristic review.
 
 - **Nielsen's 10 UX Heuristics** adapted for landing pages — covers visibility, consistency, cognitive load, and scannability.
 - **CXL/Wynter CRO Heuristics** — covers clarity, value proposition, friction, anxiety reduction, social proof relevance, and mobile conversion path.
 
 Produces:
-- **`[feature]-qa-critique.md`** — Heuristic findings from both lenses, a combined severity table (Critical / Major / Minor) sorted for handoff to a developer or designer, messaging critique, prioritized changes, and a final readiness assessment.
+
+**`[feature]-qa-critique.md`**
+Heuristic findings from both lenses with competitor citations where relevant, a combined severity table (Critical / Major / Minor) sorted for handoff to a developer or designer, messaging critique, prioritized changes, and a final readiness assessment.
 
 ---
 
@@ -42,7 +53,7 @@ Produces:
 
 At the start of each session the skill asks:
 - Which phase(s) to run and how much to complete in one session
-- Where to save output documents
+- Where to save output documents (and the screenshots folder)
 - Whether you have an existing research folder to review
 
 If you point it at an existing folder, it narrates every file it finds — filename, what it contains, and whether it's Usable, Partial, or Not usable as a research input — before doing anything else.
@@ -53,8 +64,6 @@ It checks which MCPs are connected at the start of each phase, lists what's miss
 
 ## Compatible Data Sources
 
-The skill works with any of the following if connected via MCP:
-
 | Tool | Used For |
 |---|---|
 | Notion / Google Drive | Internal docs, briefs, existing drafts |
@@ -62,7 +71,7 @@ The skill works with any of the following if connected via MCP:
 | Ahrefs / Semrush / GSC | Keyword demand and SEO data |
 | Canny or equivalent | Feature request voice-of-customer |
 | Mouseflow / FullStory / Clarity | Behavior analytics for existing pages |
-| Web fetch | Competitor pages, public docs, help center |
+| Web fetch + browser | Competitor pages, screenshots, public docs |
 
 If a tool isn't connected, the skill asks you to paste in exported data or flags the gap in the output with its implications. It never silently skips a data source.
 
@@ -83,6 +92,7 @@ Once installed, trigger it by asking Claude to build, improve, or critique a fea
 
 - Claude Cowork
 - At least one connected MCP for data retrieval (the skill will work with fewer connections but will flag what's missing)
+- Browser tool enabled in Claude Cowork for competitor screenshots
 
 ---
 
